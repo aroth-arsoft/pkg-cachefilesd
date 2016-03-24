@@ -1,0 +1,17 @@
+Source: cachefilesd
+Section: misc
+Priority: optional
+Maintainer: Shane Wegner <shane@debian.org>
+Build-Depends: cdbs, debhelper (>= 7)
+Standards-Version: 3.9.3.1
+
+Package: cachefilesd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: support fscache on already mounted filesystem
+ FSCache is a generic caching manager in the Linux kernel which can be used
+ by network and other filesystems to cache data locally.
+ .
+ CacheFiles is an FSCache backend that's meant to use as a cache a directory on
+ an already mounted filesystem of a local type (such as Ext3).  This package
+ installs the userspace support required by the cachefiles backend.

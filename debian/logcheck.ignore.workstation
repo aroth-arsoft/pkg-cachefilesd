@@ -1,0 +1,3 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cachefilesd\[[0-10]+\]: Refilling cull table ?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cachefilesd\[[0-10]+\]: Scan complete ?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cachefilesd\[[0-10]+\]: Decant (all 2) ?$
