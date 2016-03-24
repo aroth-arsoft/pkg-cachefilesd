@@ -1,10 +1,7 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/makefile.mk
+%:
+	dh $@ --parallel --with systemd
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR)
-
-#binary-fixup/cachefilesd::
-#	chmod o-rwx $(DEB_DESTDIR)/var/cache/fscache
-
+override_dh_installinit:
+	# Do nothing
